@@ -1,0 +1,121 @@
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-center;
+    background-color: white;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(118, 117, 117, 0.452);
+  
+}
+
+.header a {
+    text-decoration: none;
+}
+.header__title {
+    font-size: 1.3rem;
+    color: #F85555
+}
+
+.header .header__title a:visited {
+    text-decoration: none;
+    color: #F85555
+}
+.header .header__title a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+
+.header__nav {
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    transition: transform 800ms ease;
+    transform: translateX(105%);
+    box-shadow: 0 0 20px 0 #0009;
+    z-index: 3;
+}
+
+.header__nav-open {
+    transition: transform 800ms ease;
+    transform: translateX(0);
+}
+
+.header__menuham {
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: rgb(86, 85, 85);
+}
+
+.header__link-active {
+    color:#F85555;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    .header__title {
+        font-size: 1.7rem;
+    }
+
+    .header__menuham {
+        display: none;
+    }
+
+    .header__nav-open {
+        transform: translateX(-0);
+        transition-duration: 0ms;
+    }
+
+    .header__nav {
+        transform: translateX(-0);
+        transition-duration: 0ms;
+        position: static;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        padding: initial;
+        width: 50%;
+        max-width: 800px;
+    }
+
+    .header__list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

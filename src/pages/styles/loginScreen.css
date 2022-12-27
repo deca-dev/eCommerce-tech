@@ -1,0 +1,112 @@
+.login {
+    box-shadow: 0 0 20px 0 #0005;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    min-height: 76vh;
+    width: 100%;
+    max-width: 400px;
+    margin: 120px auto 70px;
+    border-radius: 10px;
+}
+
+.login__header {
+    font-size: 1.5;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #515151;
+}
+
+.login__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__test-data__container{
+    background-color: #D8F5FD;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    padding: 21px 0;
+}
+
+.login__form__email__label,
+.login__form__password__label {
+    display: block;
+}
+
+.login__form__email__input,
+.login__form__password__input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.login__form__btn {
+    background-color: var(--bg-color-red) ;
+    color: #fff;
+    margin: 10px 0 25px;
+    padding: 9px;
+    width: 100%;
+    cursor: pointer;
+    transition: filter 150ms ease,
+ 
+}
+
+.login__form__btn:hover {
+    filter: brightness(1.3);
+    transition: filter 150ms ease,
+        scale 100ms ease;
+}
+
+.userLogged__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    max-width: 400px;
+    margin: 190px auto 90px;
+    box-shadow: 0 0 20px 0 #0005;
+    padding: 100px;
+}
+
+.userLogged__icon {
+    font-size: 8rem;
+    aspect-ratio: 1;
+    text-align: center;
+}
+
+.userLooged__btn {
+    border: none;
+    background-color: white;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.userLooged__btn:hover {
+    filter: contrast(2);
+}
+
+.login__test-data-email,
+.login__test-data-password {
+    margin-left: 15px;
+}
+
+.signup__text {
+    cursor: pointer;
+    color: #7dc7fb;
+}
+
+.signup__text:hover {
+    color: var(--bg-color-red);
+}

@@ -1,0 +1,28 @@
+.similarProducts__main {
+    margin: 10px auto;
+}
+
+.similarProducts__title {
+    margin: 20px 0;
+    padding: 0 20px;
+    color: var(--bg-color-red);
+    font-size: 1.3rem
+}
+
+.similarProdcuts__container {
+    margin: 35px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+   
+}
+
+@media screen and (min-width: 720px) {
+    .similarProdcuts__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

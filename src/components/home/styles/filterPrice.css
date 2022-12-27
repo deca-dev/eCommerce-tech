@@ -1,0 +1,44 @@
+.accordion__container {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.accordion__label {
+    width: max-content;
+}
+
+.accordion__input {
+    /* width: 100%; */
+    width: 150px;
+    margin: 0 10px;
+    padding: 8px;
+}
+
+.accordion__container__label__input {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px;
+    width: 300px;
+}
+
+.accordion__btn {
+    position: absolute;
+    right: 30px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--bg-color-red);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+    .accordion__btn{
+        position: relative;
+    }
+
+    .accordion__btn__container{
+        display: flex;
+        width: 400px;
+        justify-content: flex-end;
+    }
+}
